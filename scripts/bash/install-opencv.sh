@@ -43,7 +43,7 @@ mv opencv-3.2.0 OpenCV
 cd OpenCV
 mkdir build
 cd build
-cmake  -D CUDA_CUDA_LIBRARY=/usr/local/cuda/targets/x86_64-linux/lib/libcudart.so -DWITH_QT=ON -DWITH_OPENGL=ON -DFORCE_VTK=ON -DWITH_TBB=ON -DWITH_GDAL=ON -DWITH_XINE=ON -DBUILD_EXAMPLES=ON ..
+cmake -D CUDA_CUDA_LIBRARY=/usr/local/cuda/targets/x86_64-linux/lib/libcudart.so -DWITH_LAPACK=OFF -DWITH_QT=ON -DWITH_OPENGL=ON -DFORCE_VTK=ON -DWITH_TBB=ON -DWITH_GDAL=ON -DWITH_XINE=ON -DBUILD_EXAMPLES=ON ..
 make -j4
 sudo make install
 sudo ldconfig
